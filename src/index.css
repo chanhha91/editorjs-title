@@ -1,0 +1,27 @@
+.ce-title {
+  line-height: 1.6em;
+  outline: none;
+  font-size: xx-large;
+}
+
+.ce-title p,
+.ce-title div{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ce-title[contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  display: none;
+}
+
+.ce-title[contentEditable=true][data-placeholder]:empty::before {
+  display: block;
+}
+
+.ce-title[contentEditable=true][data-placeholder]:empty:focus::before {
+  display: none;
+}

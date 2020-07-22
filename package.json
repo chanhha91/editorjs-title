@@ -1,0 +1,31 @@
+{
+  "name": "editorjs-title",
+  "version": "1.0.0",
+  "keywords": [
+    "title",
+    "tool",
+    "editor.js",
+    "editorjs"
+  ],
+  "description": "Title tool for EditorJS",
+  "author": {
+    "name": "Chanh Ha",
+    "email": "chanhqh.dev@gmail.com"
+  },
+  "license": "MIT",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "raw-loader": "^4.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
