@@ -135,6 +135,18 @@ class Title {
   }
 
   /**
+   * Used by Editor.js paste handling API.
+   * Provides configuration to handle only H1 tags.
+   *
+   * @returns {{handler: (function(HTMLElement): {text: string}), tags: string[]}}
+   */
+  static get pasteConfig() {
+    return {
+      tags: ['H1'],
+    };
+  }
+
+  /**
    * Get current Tools`s data
    * @returns {TitleData} Current data
    * @private
